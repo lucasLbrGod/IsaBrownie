@@ -40,7 +40,6 @@ header{
   background:#fff;
   box-shadow:0 2px 15px rgba(0,0,0,0.06);
   background-color: #f1b7c398;
-  backdrop-filter: blur(10px);
 }
 
 .navbar{
@@ -366,11 +365,13 @@ footer{
 .copy{
   text-align:center;
   padding-top:30px;
-  border-top:1px solid #eee;
-  margin-top:30px;
 }
 
-
+hr {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #d97a952a, #d97a95, #d97a9523)
+}
 /* ========================= */
 /* RESPONSIVIDADE CELULAR */
 /* ========================= */
