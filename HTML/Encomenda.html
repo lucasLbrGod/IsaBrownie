@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Encomenda.css">
+    <title>Encomenda</title>
+</head>
+<body>
+    <header>
+
+    <div class="container navbar">
+
+      <div class="logo">
+        ISA <br> BROWNIE
+      </div>
+
+      <nav class="menu" id="menu">
+        <a href="../Home.html">INÍCIO</a>
+        <a href="../Home.html">CARDÁPIO</a>
+        <a href="../Home.html">SOBRE</a>
+        <a href="../Home.html">DEPOIMENTOS</a>
+        <a href="../Home.html">CONTATO</a>
+        <a href="#" class="btn">FAÇA SUA ENCOMENDA</a>
+      </nav>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+  </header>
+
+
+    <section class="shop-home" id="encomenda">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Monte seu pedido</h2>
+</div>
+
+<div class="shop-container">
+
+<!-- PRODUTOS -->
+
+<div class="shop-products">
+
+<div class="shop-card">
+
+<img src="brownie1.jpg">
+
+<h3>Tradicional</h3>
+
+<p>R$ 8,00</p>
+
+<button class="btn add-cart"
+data-name="Tradicional"
+data-price="8">
+Adicionar
+</button>
+
+</div>
+
+
+<div class="shop-card">
+
+<img src="brownie2.jpg">
+
+<h3>Brigadeiro</h3>
+
+<p>R$ 10,00</p>
+
+<p class="btn add-cart"
+data-name="Brigadeiro"
+data-price="10">
+sem estoque
+</p>
+
+</div>
+
+
+<div class="shop-card">
+
+<img src="brownie3.jpg">
+
+<h3>Ninho com Nutella</h3>
+
+<p>R$ 12,00</p>
+
+<p class="btn add-cart"
+data-name="Ninho com Nutella"
+data-price="12">
+Sem estoque
+</p>
+
+</div>
+
+
+<div class="shop-card">
+
+<img src="brownie4.jpg">
+
+<h3>Nozes</h3>
+
+<p>R$ 11,00</p>
+
+<p class="btn add-cart"
+data-name="Nozes"
+data-price="11">
+Sem estoque
+</p>
+
+</div>
+
+</div>
+
+
+<!-- CARRINHO -->
+
+<div class="cart">
+
+<h3>
+🛒 Carrinho
+<span id="cart-count">(0)</span>
+</h3>
+
+<div id="cart-items">
+
+<p>Carrinho vazio</p>
+
+</div>
+
+<div class="cart-total">
+
+Total:
+R$ <span id="total">0</span>
+
+</div>
+
+<button class="btn" id="finish">
+
+Finalizar Compra
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../JS/Encomenda.js"> </script>
+
+
+</body>
+</html>
