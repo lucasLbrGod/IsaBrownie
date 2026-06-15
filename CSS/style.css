@@ -27,7 +27,6 @@ a{
 
 .container{
   width:90%;
-  max-width:1300px;
   margin:auto;
 }
 
@@ -40,6 +39,8 @@ header{
   z-index:1000;
   background:#fff;
   box-shadow:0 2px 15px rgba(0,0,0,0.06);
+  background-color: #f1b7c398;
+  backdrop-filter: blur(10px);
 }
 
 .navbar{
@@ -109,7 +110,6 @@ header{
 
 .hero{
   padding-top:120px;
-  min-height:100vh;
   background:linear-gradient(to right,#fff5f7,#ffeef3);
   display:flex;
   align-items:center;
@@ -145,6 +145,9 @@ header{
 .hero-img img{
   border-radius:20px;
   box-shadow:0 15px 35px rgba(0,0,0,0.12);
+  height: 35em;
+  width: 49em;
+  object-fit: cover;
 }
 
 /* FEATURES */
@@ -312,15 +315,18 @@ header{
 
 form{
   display:grid;
-  gap:20px;
+  gap:0px;
 }
 
 input, textarea{
-  padding:18px;
-  border:none;
+  padding:20px;
   border-radius:15px;
   font-family:'Poppins', sans-serif;
   outline:none;
+  border-color: #d97a95;
+  border-style: solid;
+  margin: 5px;
+  border-width: 2px;
 }
 
 textarea{
@@ -351,8 +357,10 @@ footer{
 
 .footer-grid{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:40px;
+  place-self: center;
+  justify-items: center;
 }
 
 .copy{
@@ -361,6 +369,7 @@ footer{
   border-top:1px solid #eee;
   margin-top:30px;
 }
+
 
 /* ========================= */
 /* RESPONSIVIDADE CELULAR */
@@ -435,6 +444,8 @@ footer{
     grid-template-columns:1fr;
     gap:25px;
     text-align:center;
+    max-height: 100vh;
+    max-width: 100vh;
   }
 
   .hero-text h1{
