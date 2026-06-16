@@ -40,6 +40,7 @@ header{
   background:#fff;
   box-shadow:0 2px 15px rgba(0,0,0,0.06);
   background-color: #f1b7c398;
+  backdrop-filter: blur(10px);
 }
 
 .navbar{
@@ -108,7 +109,7 @@ header{
 /* HERO */
 
 .hero{
-  padding-top:120px;
+  padding-top: 90px;
   background:linear-gradient(to right,#fff5f7,#ffeef3);
   display:flex;
   align-items:center;
