@@ -1,4 +1,4 @@
-// MENU MOBILE
+
 
 const mobileBtn = document.getElementById('menu-mobile');
 const menu = document.getElementById('menu');
@@ -7,7 +7,7 @@ mobileBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
-// FORM DE DEPOIMENTOS
+
 
 const form = document.getElementById('reviewForm');
 const wrapper = document.getElementById('testimonial-wrapper');

@@ -30,7 +30,7 @@ a{
   margin:auto;
 }
 
-/* NAVBAR */
+
 
 header{
   position:fixed;
@@ -106,7 +106,7 @@ header{
   border-radius:5px;
 }
 
-/* HERO */
+
 
 .hero{
   padding-top: 90px;
@@ -150,7 +150,7 @@ header{
   object-fit: cover;
 }
 
-/* FEATURES */
+
 
 .features{
   padding:70px 0;
@@ -175,7 +175,7 @@ header{
   transform:translateY(-8px);
 }
 
-/* PRODUTOS */
+
 
 .products{
   padding:100px 0;
@@ -233,7 +233,7 @@ header{
   margin-bottom:10px;
 }
 
-/* SOBRE */
+
 
 .about{
   background:#ffeef3;
@@ -257,7 +257,7 @@ header{
   margin-bottom:20px;
 }
 
-/* DEPOIMENTOS */
+
 
 .testimonials{
   padding:100px 0;
@@ -297,7 +297,7 @@ header{
   color:#6d3f3f;
 }
 
-/* FORM */
+
 
 .review-form{
   margin-top:70px;
@@ -334,7 +334,7 @@ textarea{
   resize:none;
 }
 
-/* CTA */
+
 
 .cta{
   padding:70px 0;
@@ -348,7 +348,7 @@ textarea{
   margin-bottom:20px;
 }
 
-/* FOOTER */
+
 
 footer{
   background:white;
@@ -373,9 +373,7 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, #d97a952a, #d97a95, #d97a9523)
 }
-/* ========================= */
-/* RESPONSIVIDADE CELULAR */
-/* ========================= */
+
 
 @media (max-width: 768px){
 
@@ -391,7 +389,7 @@ hr {
     width:92%;
   }
 
-  /* NAVBAR */
+  
 
   header{
     height:75px;
@@ -434,7 +432,7 @@ hr {
     font-size:12px;
   }
 
-  /* HERO */
+
 
   .hero{
     padding-top:95px;
@@ -473,7 +471,6 @@ hr {
     border-radius:18px;
   }
 
-  /* FEATURES */
 
   .features{
     padding:40px 0;
@@ -499,8 +496,7 @@ hr {
     line-height:1.4;
   }
 
-  /* TITULOS */
-
+ 
   .section-title{
     margin-bottom:30px;
   }
@@ -514,7 +510,7 @@ hr {
     line-height:1;
   }
 
-  /* PRODUTOS */
+
 
   .products{
     padding:50px 0;
@@ -546,7 +542,7 @@ hr {
     margin-bottom:15px;
   }
 
-  /* SOBRE */
+ 
 
   .about{
     padding:50px 0;
@@ -578,7 +574,6 @@ hr {
     margin-bottom:15px;
   }
 
-  /* DEPOIMENTOS */
 
   .testimonials{
     padding:50px 0;
@@ -633,7 +628,7 @@ hr {
     min-height:120px;
   }
 
-  /* CTA */
+
 
   .cta{
     padding:45px 0;
