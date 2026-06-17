@@ -388,6 +388,32 @@ hr {
   background-image: linear-gradient(to right, #d97a952a, #d97a95, #d97a9523)
 }
 
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px; 
+  right: 30px; 
+  width: 60px; 
+  height: 60px; 
+  background-color: #f1b7c4; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
+  z-index: 2000; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-btn img {
+  width: 35px; 
+  height: 35px;
+}
+
+/* Efeito quando o mouse passa por cima (animação de crescimento) */
+.whatsapp-btn:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 8px 25px #eca8bb; /* Sombra verde brilhante */
+}
 
 @media (max-width: 768px){
 
