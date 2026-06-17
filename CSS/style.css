@@ -159,8 +159,8 @@ header{
 .hero-img img{
   border-radius:20px;
   box-shadow:0 15px 35px rgba(0,0,0,0.12);
-  height: 35em;
-  width: 49em;
+  height: 50em;
+  width: 70em;
   object-fit: cover;
 }
 
@@ -409,10 +409,9 @@ hr {
   height: 35px;
 }
 
-/* Efeito quando o mouse passa por cima (animação de crescimento) */
 .whatsapp-btn:hover {
   transform: scale(1.1) translateY(-5px);
-  box-shadow: 0 8px 25px #eca8bb; /* Sombra verde brilhante */
+  box-shadow: 0 8px 25px #eca8bb;
 }
 
 @media (max-width: 768px){
