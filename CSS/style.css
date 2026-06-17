@@ -113,6 +113,7 @@ header{
   background:linear-gradient(to right,#fff5f7,#ffeef3);
   display:flex;
   align-items:center;
+  min-height:100vh;
 }
 
 .hero-content{
@@ -146,7 +147,6 @@ header{
   border-radius:20px;
   box-shadow:0 15px 35px rgba(0,0,0,0.12);
   height: 35em;
-  width: 49em;
   object-fit: cover;
 }
 
@@ -298,7 +298,6 @@ header{
 }
 
 
-
 .review-form{
   margin-top:70px;
   background:#ffeef3;
@@ -446,12 +445,14 @@ hr {
     text-align:center;
     max-height: 100vh;
     max-width: 100vh;
+    padding-top:20px;
   }
 
   .hero-text h1{
     font-size:52px;
     line-height:0.9;
     margin-bottom:10px;
+
   }
 
   .hero-text h3{
@@ -465,11 +466,12 @@ hr {
     margin:auto auto 20px;
   }
 
-  .hero-img img{
-    height:260px;
-    object-fit:cover;
-    border-radius:18px;
-  }
+ .hero-img img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:18px;
+}
 
 
   .features{
@@ -477,7 +479,7 @@ hr {
   }
 
   .feature-grid{
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
     gap:12px;
   }
 
@@ -604,7 +606,7 @@ hr {
     font-size:14px;
   }
 
-  /* FORMULARIO */
+
 
   .review-form{
     margin-top:35px;
@@ -644,7 +646,7 @@ hr {
     margin-top:10px;
   }
 
-  /* FOOTER */
+ 
 
   footer{
     padding:45px 0 20px;
