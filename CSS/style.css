@@ -114,7 +114,8 @@ header{
 }
 
 #inicio {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 #sobre {
@@ -124,6 +125,7 @@ header{
 
 .hero{
   padding-top: 90px;
+  padding-bottom: 10px;
   background:linear-gradient(to right,#fff5f7,#ffeef3);
   display:flex;
   align-items:center;
@@ -159,9 +161,9 @@ header{
 .hero-img img{
   border-radius:20px;
   box-shadow:0 15px 35px rgba(0,0,0,0.12);
-  height: 50em;
-  width: 70em;
-  object-fit: cover;
+  width: 105%;
+  max-height: 700px; /* Impede que a imagem fique alta demais */
+  object-fit: cover; /* Faz o recorte bonito sem achatar a imagem */
 }
 
 
@@ -475,9 +477,9 @@ hr {
 
   .hero{
     padding-top:95px;
-    min-height:auto;
+    min-height: 100vh;
     padding-bottom:40px;
-    height: 100vh;
+    height: auto;      
   }
 
   .hero-content{
