@@ -134,9 +134,87 @@ header{
   cursor:pointer;
 }
 
-/* === ANIMAÇÕES DO LOGO === */
+.historia-section{
+  padding-top:150px;
+  padding-bottom:100px;
+  background:linear-gradient(to right,#fff5f7,#ffeef3);
+  min-height:100vh;
+}
 
-/* Flutuação suave no ícone do brownie */
+.historia-container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.historia-titulo{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.historia-titulo span{
+  color:#d97a95;
+  letter-spacing:2px;
+  font-size:14px;
+  font-weight:600;
+}
+
+.historia-titulo h1{
+  font-size:70px;
+  color:#6d3f3f;
+  margin-top:10px;
+}
+
+.historia-card{
+  display:grid;
+  grid-template-columns:1fr 1.3fr;
+  gap:50px;
+  align-items:center;
+}
+
+.foto-fundadora{
+  width:100%;
+  height:650px;
+  background:#fff;
+  border-radius:25px;
+  border:3px dashed #d97a95;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#d97a95;
+  font-size:22px;
+  font-weight:600;
+  box-shadow:0 15px 35px rgba(0,0,0,.10);
+}
+
+.foto-fundadora img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:25px;
+}
+
+.historia-texto{
+  background:white;
+  padding:45px;
+  border-radius:25px;
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.historia-texto p{
+  color:#6f5a5a;
+  line-height:1.9;
+  margin-bottom:18px;
+  font-size:16px;
+}
+
+.assinatura{
+  margin-top:30px;
+  color:#d97a95;
+  font-size:22px;
+  font-weight:600;
+}
+
 @keyframes float {
   0%   { transform: translateY(0px); }
   50%  { transform: translateY(-6px); }
@@ -147,8 +225,6 @@ header{
   animation: float 3s ease-in-out infinite;
 }
 
-
-/* Brilho deslizante no nome */
 @keyframes slideFromRight {
   0% {
     opacity: 0;
