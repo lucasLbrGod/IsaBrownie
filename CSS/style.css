@@ -39,6 +39,7 @@ header{
   box-shadow:0 2px 15px rgba(0,0,0,0.06);
   background-color: #f1b7c398;
   backdrop-filter: blur(10px);
+  overflow: hidden;
 }
 
 .navbar{
@@ -66,12 +67,13 @@ header{
 
 .logo img{
   width:180px;
-  height:180px;
+  height: 80px;
   object-fit:contain;
 }
 
-.brow{
-    width:180px;
+.brow {
+  width: auto;  
+  height: 75px;    
 }
 
 .nome{
@@ -130,6 +132,41 @@ header{
   flex-direction:column;
   gap:5px;
   cursor:pointer;
+}
+
+/* === ANIMAÇÕES DO LOGO === */
+
+/* Flutuação suave no ícone do brownie */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.brow {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+/* Brilho deslizante no nome */
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nome {
+  opacity: 0;
+  animation: slideFromRight 0.9s ease-out 0.1s forwards;
+  animation-delay: 0.9s;
+  width: 480px;
+  height: 85px; 
+  object-fit: fill;
 }
 
 .menu-mobile span{
@@ -300,7 +337,9 @@ header{
   margin-bottom:20px;
 }
 
-
+.about-text .btn {
+  margin-top: 25px;
+}
 
 .testimonials{
   padding:100px 0;
