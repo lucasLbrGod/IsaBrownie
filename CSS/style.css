@@ -5,6 +5,10 @@
   scroll-behavior:smooth;
 }
 
+html {
+  scroll-padding-top: 80px;
+}
+
 body{
   font-family:'Poppins', sans-serif;
   overflow-x:hidden;
@@ -39,7 +43,6 @@ header{
   box-shadow:0 2px 15px rgba(0,0,0,0.06);
   background-color: #f1b7c398;
   backdrop-filter: blur(10px);
-  overflow: hidden;
 }
 
 .navbar{
@@ -77,7 +80,8 @@ header{
 }
 
 .nome{
-    width:480px;
+  max-width:480px;
+  width:480px;
 }
 
 .logo span{
@@ -241,7 +245,7 @@ header{
   animation: slideFromRight 0.9s ease-out 0.1s forwards;
   animation-delay: 0.9s;
   width: 480px;
-  height: 85px; 
+  height: 85px;
   object-fit: fill;
 }
 
@@ -302,8 +306,8 @@ header{
   border-radius:20px;
   box-shadow:0 15px 35px rgba(0,0,0,0.12);
   width: 105%;
-  max-height: 700px; /* Impede que a imagem fique alta demais */
-  object-fit: cover; /* Faz o recorte bonito sem achatar a imagem */
+  max-height: 700px; 
+  object-fit: cover;
 }
 
 
@@ -334,7 +338,8 @@ header{
 
 
 .products{
-  padding:100px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section-title{
@@ -457,7 +462,7 @@ header{
 
 
 .review-form{
-  margin-top:300px;
+  margin-top:100px;
   background:#ffeef3;
   padding:50px;
   border-radius:30px;
@@ -558,6 +563,15 @@ hr {
 }
 
 @media (max-width: 768px){
+
+  .nome {
+    width: 180px;
+    height: 50px;
+  }
+
+  .brow {
+    height: 50px; 
+  }
 
   html{
     scroll-behavior:smooth;
@@ -853,6 +867,20 @@ hr {
   .copy{
     font-size:12px;
     margin-top:20px;
+  }
+
+  .logo {
+    max-width: calc(100% - 60px);
+    overflow: hidden;
+  }
+
+  .nome {
+    width: 160px !important;
+    height: 45px !important;
+  }
+
+  .brow {
+    height: 45px !important;
   }
 
 }
