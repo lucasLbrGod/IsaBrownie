@@ -517,12 +517,24 @@ footer{
   padding:70px 0 30px;
 }
 
-.footer-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:40px;
-  place-self: center;
+.footer-grid {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 1fr 80px; /* ← 5 colunas */
+  gap: 40px;
+  align-items: center;
   justify-items: center;
+}
+
+.footer-brow {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.footer-nome {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
 }
 
 .copy{
@@ -852,6 +864,7 @@ hr {
     gap:25px;
     text-align:center;
   }
+  
 
   footer h3{
     font-size:24px;
