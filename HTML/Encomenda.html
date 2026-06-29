@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Encomenda.css">
+     <link rel="stylesheet" href=>
     <link rel="shortcut icon" href="../Imagem/favicon.png" type="image/x-icon">n
     <title>Encomenda</title>
 </head>
@@ -14,10 +15,11 @@
 
       <div class="logo">
         <a href="../index.html">
-            <img src="../Imagem/logo.png" alt="Logo Isa Brownie">
-            <span>ISA <br> BROWNIE</span>
+            <img class="brow" src="../Imagem/LogoTeste.png" alt="Logo Isa Brownie">
+            <span><img class="nome" src="../Imagem/isapensando.png" alt=""></span>
           </a>
       </div>
+
 
       <nav class="menu" id="menu">
         <a href="../index.html">INÍCIO</a>
@@ -25,7 +27,6 @@
         <a href="../index.html">SOBRE</a>
         <a href="../index.html">DEPOIMENTOS</a>
         <a href="../index.html">CONTATO</a>
-        <a href="#" class="btn">FAÇA SUA ENCOMENDA</a>
       </nav>
 
       <div class="menu-mobile" id="menu-mobile">
@@ -159,6 +160,23 @@ Finalizar Compra
 
 <script src="../JS/Encomenda.js"> </script>
 
+
+<script>
+
+const menu = document.getElementById("menu");
+const menuMobile = document.getElementById("menu-mobile");
+
+menuMobile.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+window.addEventListener("resize", () => {
+    if(window.innerWidth > 768){
+        menu.classList.remove("active");
+    }
+});
+
+</script>
 
 </body>
 </html>

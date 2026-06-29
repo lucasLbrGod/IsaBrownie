@@ -1,3 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
 header{
   position:fixed;
   top:0;
@@ -5,13 +22,15 @@ header{
   z-index:1000;
   background:#fff;
   box-shadow:0 2px 15px rgba(0,0,0,0.06);
+  background-color: #f1b7c398;
+  backdrop-filter: blur(10px);
 }
 
 .navbar{
-  height:90px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
@@ -31,15 +50,33 @@ header{
 }
 
 .logo img{
-  width:120px;
-  height:120px;
+  width:180px;
+  height: 80px;
   object-fit:contain;
+}
+
+.brow {
+  width: auto;  
+  height: 75px;    
+}
+
+.nome{
+  max-width:480px;
+  width:480px;
 }
 
 .logo span{
   line-height:0.9;
 }
 
+.logo a, 
+.logo a:visited, 
+.logo a:hover, 
+.logo a:active, 
+.logo a:focus {
+    color: inherit;
+    text-decoration: none; 
+}
 
 .menu{
   display:flex;
@@ -82,15 +119,7 @@ header{
   cursor:pointer;
 }
 
-.menu-mobile span{
-  width:28px;
-  height:3px;
-  background:#7c4c4c;
-  border-radius:5px;
-}
-
 .shop-home{
-
 padding:100px 0;
 background:#fff5f7;
 
@@ -189,25 +218,79 @@ margin:25px 0;
 
 
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.shop-container{
+    /* HEADER */
 
-grid-template-columns:1fr;
+    .navbar{
+        height:75px;
+        padding:0 20px;
+    }
 
-}
+    .nome{
+        display:none;
+    }
 
-.shop-products{
+    .brow{
+        height:50px;
+    }
 
-grid-template-columns:1fr;
+    /* BOTÃO HAMBÚRGUER */
 
-}
+    .menu-mobile{
+        display:flex;
+        justify-content:space-between;
+        width:30px;
+        height:22px;
+        z-index:1001;
+    }
 
-.cart{
+    /* MENU */
 
-position:relative;
-top:0;
+    .menu{
+        position:fixed;
+        top:75px;
+        right:-100%;
+        width:250px;
+        height:100vh;
+        background:#fff;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        gap:25px;
+        padding-top:40px;
+        transition:.4s;
+        box-shadow:-8px 0 20px rgba(0,0,0,.1);
+    }
 
-}
+    .menu.active{
+        right:0;
+    }
+
+    .menu a{
+        font-size:16px;
+    }
+
+    .btn{
+        width:85%;
+        text-align:center;
+    }
+
+    /* LOJA */
+
+    .shop-container{
+        grid-template-columns:1fr;
+    }
+
+    .shop-products{
+        grid-template-columns:1fr;
+    }
+
+    .cart{
+        position:relative;
+        top:0;
+        margin-top:25px;
+    }
 
 }

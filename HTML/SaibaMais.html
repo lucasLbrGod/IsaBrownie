@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/SaibawMais.css">
+    <link rel="stylesheet" href="../CSS/SaibaMais.css">
     <link rel="shortcut icon" href="../Imagem/favicon.png" type="image/x-icon">
     <title> Minha História</title>
 </head>
@@ -27,7 +27,6 @@
             <a href="../index.html#sobre">SOBRE</a>
             <a href="../index.html#depoimentos">DEPOIMENTOS</a>
             <a href="../index.html#contato">CONTATO</a>
-            <a href="HTML/Cadastro.html" class="btn">FAÇA SUA ENCOMENDA</a>
           </nav>
     
           <div class="menu-mobile" id="menu-mobile">
@@ -160,9 +159,14 @@
 
 </footer>
 
-</body>
-</html>
+<script>
+const menuMobile = document.getElementById("menu-mobile");
+const menu = document.getElementById("menu");
 
+menuMobile.addEventListener("click", function () {
+    menu.classList.toggle("active");
+});
+</script>
 
 </body>
 </html>

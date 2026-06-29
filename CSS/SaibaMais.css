@@ -1,107 +1,290 @@
+
 .historia-section{
-    padding-top:150px;
-    padding-bottom:100px;
+    padding:150px 0 100px;
     background:linear-gradient(to right,#fff5f7,#ffeef3);
     min-height:100vh;
 }
 
 .historia-container{
     width:90%;
-    max-width:1200px;
+    max-width:1250px;
     margin:auto;
 }
 
 .historia-titulo{
     text-align:center;
-    margin-bottom:60px;
+    margin-bottom:70px;
 }
 
 .historia-titulo span{
+    display:block;
     color:#d97a95;
-    letter-spacing:2px;
-    font-size:14px;
+    font-size:15px;
     font-weight:600;
+    letter-spacing:3px;
+    margin-bottom:10px;
 }
 
 .historia-titulo h1{
-    font-size:70px;
+    font-size:72px;
     color:#6d3f3f;
-    margin-top:10px;
+    line-height:1;
 }
 
 .historia-card{
     display:grid;
-    grid-template-columns:1fr 1.3fr;
-    gap:50px;
+    grid-template-columns:480px 1fr;
+    gap:60px;
     align-items:center;
 }
 
 .foto-fundadora{
     width:100%;
-    height:650px;
-    background:#fff;
-    border-radius:25px;
+    height:680px;
+    border-radius:30px;
+    overflow:hidden;
     border:3px dashed #d97a95;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#d97a95;
-    font-size:22px;
-    font-weight:600;
-    box-shadow:0 15px 35px rgba(0,0,0,.10);
+    background:white;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
 }
 
 .foto-fundadora img{
     width:100%;
     height:100%;
     object-fit:cover;
-    border-radius:25px;
+    transition:.5s;
+}
+
+.foto-fundadora:hover img{
+    transform:scale(1.05);
 }
 
 .historia-texto{
     background:white;
-    padding:45px;
-    border-radius:25px;
+    padding:50px;
+    border-radius:30px;
     box-shadow:0 15px 35px rgba(0,0,0,.08);
 }
 
 .historia-texto p{
     color:#6f5a5a;
-    line-height:1.9;
-    margin-bottom:18px;
-    font-size:16px;
+    font-size:17px;
+    line-height:2;
+    margin-bottom:22px;
+    text-align:justify;
 }
 
 .assinatura{
-    margin-top:30px;
+    margin-top:35px;
     color:#d97a95;
-    font-size:22px;
+    font-size:24px;
     font-weight:600;
+    line-height:1.7;
 }
 
-@media(max-width:768px){
+.assinatura::before{
+    display:block;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.historia-texto{
+    animation:aparecer 1s ease;
+}
+
+.foto-fundadora{
+    animation:subir 1s ease;
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes subir{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =====================================
+   RESPONSIVIDADE - CELULAR
+===================================== */
+
+@media screen and (max-width:768px){
+
+    html,
+    body{
+        overflow-x:hidden;
+    }
+
+    /* HEADER */
+
+    header{
+        height:75px;
+    }
+
+    .navbar{
+        height:75px;
+        padding:0 15px;
+    }
+
+    .logo{
+        max-width:70%;
+    }
+
+    .brow{
+        height:50px !important;
+        width:auto;
+    }
+
+    .nome{
+        display:none;
+    }
+
+    /* MENU */
+
+    .menu-mobile{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        width:30px;
+        height:22px;
+        cursor:pointer;
+        z-index:1001;
+    }
+
+    .menu-mobile span{
+        width:100%;
+        height:3px;
+        background:#7c4c4c;
+        border-radius:5px;
+    }
+
+    .menu{
+        position:fixed;
+        top:75px;
+        right:-100%;
+        width:250px;
+        height:100vh;
+        background:#fff;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:center;
+        gap:25px;
+        padding:40px 20px;
+        transition:.4s;
+        box-shadow:-5px 0 20px rgba(0,0,0,.15);
+    }
+
+    .menu.active{
+        right:0;
+    }
+
+    .menu a{
+        font-size:16px;
+    }
+
+    .menu .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    /* PÁGINA */
 
     .historia-section{
-        padding-top:120px;
+        padding:110px 0 50px;
+    }
+
+    .historia-container{
+        width:92%;
+    }
+
+    .historia-titulo{
+        margin-bottom:35px;
+    }
+
+    .historia-titulo span{
+        font-size:12px;
     }
 
     .historia-titulo h1{
-        font-size:42px;
+        font-size:38px;
     }
 
     .historia-card{
-        grid-template-columns:1fr;
+        display:flex;
+        flex-direction:column;
+        gap:25px;
     }
 
     .foto-fundadora{
-        height:300px;
+        order:1;
+        width:100%;
+        height:350px;
+        border-radius:20px;
+    }
+
+    .foto-fundadora img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        border-radius:20px;
     }
 
     .historia-texto{
+        order:2;
+        width:100%;
         padding:25px;
+        border-radius:20px;
     }
 
     .historia-texto p{
-        font-size:14px;
+        font-size:15px;
+        line-height:1.8;
+        text-align:justify;
     }
+
+    .assinatura{
+        text-align:center;
+        font-size:18px;
+    }
+
+    /* FOOTER */
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+        text-align:center;
+    }
+
+    footer form{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    footer input,
+    footer button{
+        width:100%;
+    }
+
 }
