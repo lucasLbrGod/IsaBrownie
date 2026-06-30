@@ -216,7 +216,31 @@ margin:25px 0;
 
 }
 
+#toast-notificacao {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff5f7;
+  color: #6d3f3f; 
+  padding: 16px 28px;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 10px 30px rgba(109, 63, 63, 0.15);
+  border-left: 6px solid #d97a95; 
+  z-index: 2000; 
+  transition: bottom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
 
+#toast-notificacao.mostrar {
+  bottom: 30px; 
+}
 
 @media (max-width:768px){
 
