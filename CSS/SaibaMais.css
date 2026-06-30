@@ -146,19 +146,6 @@
         padding:0 15px;
     }
 
-    .logo{
-        max-width:70%;
-    }
-
-    .brow{
-        height:50px !important;
-        width:auto;
-    }
-
-    .nome{
-        display:none;
-    }
-
     /* MENU */
 
     .menu-mobile{
